@@ -11,7 +11,4 @@ class App extends React.Component {
     }
 }
 
-// STATELESS COMPONENT WAY
-// const App = () => <h1>Hello Eggheads</h1>
-
 export default App
