@@ -1,0 +1,16 @@
+{
+  "name": "chapter17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-preset-react": "^6.3.13"
+  },
+  "scripts": {
+    "test": "babel --presets react src.js -o dist.js --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
