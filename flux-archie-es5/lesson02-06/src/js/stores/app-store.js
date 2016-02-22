@@ -13,7 +13,8 @@ for(var i=1; i<9; i++){
     'title':'Widget #' + i,
     'summary': 'This is an awesome widget!',
     'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, commodi.',
-    'cost': i
+    'cost': i,
+    'img': 'https://placeholdit.imgix.net/~text?txtsize=18&txt=PRODUCT%20IMAGE&w=150&h=150'
   });
 }
 
