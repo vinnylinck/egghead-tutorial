@@ -19,6 +19,7 @@ const AppStore = Object.assign(EventEmitter.prototype, {
   },
 
   getCart(){
+<<<<<<< HEAD
     return CartAPI.cartItems;
   },
 
@@ -28,11 +29,25 @@ const AppStore = Object.assign(EventEmitter.prototype, {
 
   getCartTotals(){
     return CartAPI.cartTotals();
+=======
+    return _cartItems;
+  },
+
+  getCatalog(){
+    return _catalog.map(item => {
+      return Object.assign( {}, item, _cartItems.find( cItem => cItem.id === item.id))
+    })
+  },
+
+  getCartTotals(){
+    return _cartTotals();
+>>>>>>> 4f07f9a1d43d08e182344920f55051b3e46d5c41
   },
 
   dispatcherIndex: register( function( action ){
     switch(action.actionType){
       case AppConstants.ADD_ITEM:
+<<<<<<< HEAD
                 CartAPI.addItem( action.item );
                 break;
       case AppConstants.REMOVE_ITEM:
@@ -45,6 +60,20 @@ const AppStore = Object.assign(EventEmitter.prototype, {
 
       case AppConstants.DECREASE_ITEM:
           CartAPI.decreaseItem( action.item );
+=======
+                _addItem( action.item );
+                break;
+      case AppConstants.REMOVE_ITEM:
+          _removeItem( action.item );
+          break;
+
+      case AppConstants.INCREASE_ITEM:
+          _increaseItem( action.item );
+          break;
+
+      case AppConstants.DECREASE_ITEM:
+          _decreaseItem( action.item );
+>>>>>>> 4f07f9a1d43d08e182344920f55051b3e46d5c41
           break;
     }
 
@@ -53,4 +82,8 @@ const AppStore = Object.assign(EventEmitter.prototype, {
   })
 });
 
+<<<<<<< HEAD
 export default AppStore;
+=======
+export default AppStore
+>>>>>>> 4f07f9a1d43d08e182344920f55051b3e46d5c41
