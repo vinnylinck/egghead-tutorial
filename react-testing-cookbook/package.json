@@ -1,0 +1,20 @@
+{
+  "name": "react-testing-cookbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "expect": "^1.16.0",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^0.14.8"
+  },
+  "dependencies": {
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  }
+}
